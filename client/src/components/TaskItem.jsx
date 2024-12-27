@@ -33,7 +33,7 @@ const TaskItem = ({ task, toggleComplete, deleteTask }) => {
           </span>
         </span>
       </div>
-      <div>
+      <div >
         <button
           onClick={() => toggleComplete(task._id)}
           className={`btn ${
@@ -44,7 +44,7 @@ const TaskItem = ({ task, toggleComplete, deleteTask }) => {
         </button>
         <button
           onClick={() => deleteTask(task._id)}
-          className="btn btn-danger"
+          className="btn btn-danger mx-3"
         >
           Delete
         </button>
