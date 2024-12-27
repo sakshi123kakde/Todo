@@ -1,0 +1,58 @@
+.task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 5px solid #ccc;
+  }
+  
+  .task-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-due {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* Priority Colors */
+  .priority-high {
+    border-left-color: #e63946;
+  }
+  
+  .priority-medium {
+    border-left-color: #f4a261;
+  }
+  
+  .priority-low {
+    border-left-color: #2a9d8f;
+  }
+  
+  /* Completed Tasks */
+  .completed-task {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Deadline Colors */
+  .task-item:has(.task-due:contains('🔴')) {
+    border-left-color: #e63946;
+  }
+  
+  .task-item:has(.task-due:contains('🟡')) {
+    border-left-color: #f4a261;
+  }
+  
+  .task-item:has(.task-due:contains('🟢')) {
+    border-left-color: #2a9d8f;
+  }
+  
