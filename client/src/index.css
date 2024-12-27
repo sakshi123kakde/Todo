@@ -90,4 +90,19 @@ body{
     }
   }
   
-  
+  .input-group {
+    display: flex;
+    flex-direction: row; /* Stack elements vertically */
+    gap: 10px; /* Space between elements */
+    padding: 5px;
+   /* margin: 20px; /* Add margin around the input group */
+  }
+
+
+  .task{
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  select{
+
+  }

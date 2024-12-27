@@ -26,7 +26,7 @@ const TaskInput = ({ addTask }) => {
     <div className="input-group mb-3">
       <input
         type="text"
-        className="form-control"
+        className="form-control task"
         placeholder="Enter task"
         value={taskInput}
         onChange={(e) => setTaskInput(e.target.value)}
