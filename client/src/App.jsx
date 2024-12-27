@@ -32,7 +32,6 @@ const App = () => {
       });
       const data = await response.json();
       setTasks([...tasks, data]);
-     
     } catch (err) {
       console.error("Error adding task:", err);
     }
@@ -53,7 +52,6 @@ const App = () => {
       });
       const data = await response.json();
       setTasks(tasks.map((task) => (task._id === id ? data : task)));
-     
     } catch (err) {
       console.error("Error updating task:", err);
     }
@@ -72,11 +70,21 @@ const App = () => {
     }
   };
 
- 
   return (
     <div className="container">
-      <h1 style={{ textAlign: "center", margin: "5%" }}>Todo List</h1>
-      <p style={{ textAlign: "center" }}>Get things done, one task at a time!</p>
+      <h1
+        style={{
+          textAlign: "center",
+          margin: "5%",
+          fontSize: "2.5rem",
+          color: "#4A90E2",
+        }}
+      >
+        📝 Todo List
+      </h1>
+      <p  className="animate-charcter">
+      Stay Organized, Stay Ahead!
+      </p>
 
       <TaskInput addTask={addTask} />
       <TaskList
