@@ -10,7 +10,7 @@ const App = () => {
   // Fetch tasks from backend
   const fetchTasks = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/tasks");
+      const response = await fetch("https://todobackend-prpc.onrender.com");
       const data = await response.json();
       setTasks(data);
     } catch (err) {
